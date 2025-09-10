@@ -13,7 +13,7 @@ class ReportsScreen extends StatefulWidget {
 class _ReportsScreenState extends State<ReportsScreen> {
   String selectedYear = '2023';
 
-  // Simulação de dados por ano
+  // -------- Simulação / dados / ano
   final Map<String, List<double>> salesData = {
     '2022': [10, 12, 8, 14, 11, 9],
     '2023': [12, 15, 8, 18, 10, 14],
@@ -38,7 +38,7 @@ class _ReportsScreenState extends State<ReportsScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Dropdown de seleção de ano
+            // -------- 
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -70,7 +70,7 @@ class _ReportsScreenState extends State<ReportsScreen> {
             ),
             const SizedBox(height: 20),
 
-            // Gráfico de barras
+            // -------- Gráfico de barras
             Expanded(
               child: BarChart(
                 BarChartData(
@@ -125,7 +125,7 @@ class _ReportsScreenState extends State<ReportsScreen> {
             ),
             const SizedBox(height: 20),
 
-            // Gráfico de pizza
+            // -------- Gráfico de pizza
             SizedBox(
               height: 200,
               child: PieChart(

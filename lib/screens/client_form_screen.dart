@@ -47,7 +47,7 @@ class _ClientFormScreenState extends State<ClientFormScreen> {
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            // Formulário
+            // -------- Formulário --------
             Form(
               key: _formKey,
               child: Column(
@@ -66,7 +66,7 @@ class _ClientFormScreenState extends State<ClientFormScreen> {
                         value == null || !value.contains('@')
                             ? 'Informe um e-mail válido'
                             : null,
-                  ),
+                  ), 
                   TextFormField(
                     controller: _phoneController,
                     decoration: const InputDecoration(labelText: 'Telefone'),
@@ -87,7 +87,8 @@ class _ClientFormScreenState extends State<ClientFormScreen> {
             ),
             const SizedBox(height: 20),
 
-            // Lista de clientes cadastrados
+            // -------- Lista de clientes cadastrados --------
+
             Expanded(
               child: clients.isEmpty
                   ? const Center(

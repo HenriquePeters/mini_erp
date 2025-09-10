@@ -132,7 +132,8 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
     );
 
-    // Layout responsivo: centralizado em telas estreitas; card dividido em telas largas
+    // -------- 
+
     final content = isWide
         ? Center(
             child: ConstrainedBox(
@@ -145,7 +146,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 child: Row(
                   children: [
-                    // Lado esquerdo com imagem/branding
+
+                    // -------- Lado esquerdo / imagem/branding
                     Expanded(
                       child: Container(
                         height: 520,
@@ -176,7 +178,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                     ),
-                    // Lado direito com formulário
+                    // -------- Lado direito / formulário
                     Expanded(
                       child: Padding(
                         padding: const EdgeInsets.all(24),
